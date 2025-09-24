@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* global.css or App.css */
+body.dark-mode {
+  background-color: #121212; /* dark background */
+  color: #ffffff;           /* default text color in dark mode */
+}
+
+/* Override Bootstrap text classes in dark mode */
+body.dark-mode .text-dark {
+  color: #ffffff !important;
+}
+
+/* Optional: links in dark mode */
+body.dark-mode a {
+  color: #1e90ff;
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+body.dark-mode .dropdown-item {
+  color: #ffffff;
+}
+body.dark-mode .dropdown-item:hover {
+  background-color: #333333;
+}
+
+
+
