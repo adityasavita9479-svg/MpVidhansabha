@@ -37,8 +37,7 @@ const Navbar = () => {
     },
     {
       title: 'उपाध्यक्ष',
-      options: [
-        { name: 'वर्तमान ', path: '#' },
+      options: [  
         { name: 'भूतपूर्व ', path: '/uplist' },
       ],
     },
@@ -46,7 +45,7 @@ const Navbar = () => {
       title: 'नेता प्रतिपक्ष',
       options: [
         { name: 'वर्तमान ', path: '/umg' },
-        { name: 'भूतपूर्व ', path: '#' },
+        { name: 'भूतपूर्व ', path: '/umglst' },
       ],
     },
     {

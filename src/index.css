@@ -536,7 +536,7 @@ code {
 }
 
 .section-heading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #2c3e50;
@@ -544,12 +544,12 @@ code {
 
 .governors-grid {
   display: grid;
-  grid-template-columns: repeat(5, 220px); /* 5 fixed-size cards per row */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* flexible grid */
   gap: 20px;
-  justify-content: center; /* centers the grid */
+  justify-content: center;
   margin: 0 auto;
+  max-width: 1400px; /* keeps grid neat */
 }
-
 
 .governor-card {
   text-decoration: none;
@@ -584,7 +584,7 @@ code {
 }
 
 .governor-name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 8px 0 5px;
 }
@@ -593,6 +593,84 @@ code {
   font-size: 0.9rem;
   color: #555;
 }
+
+/* --- Responsive Breakpoints --- */
+
+/* Large screens (desktops >1200px) */
+@media (min-width: 1200px) {
+  .governors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Medium screens (tablets & small laptops) */
+@media (max-width: 992px) {
+  .section-heading {
+    font-size: 1.7rem;
+  }
+
+  .governor-image {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Small screens (large phones, portrait tablets) */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .governor-name {
+    font-size: 1.1rem;
+  }
+
+  .governor-tenure {
+    font-size: 0.85rem;
+  }
+
+  .governor-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .governor-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on phones */
+  }
+
+  .governor-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .governor-name {
+    font-size: 1rem;
+  }
+
+  .governor-tenure {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ultra small devices (<360px, very small phones) */
+@media (max-width: 360px) {
+  .governors-grid {
+    grid-template-columns: 1fr; /* stack cards */
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+  }
+}
+
+
 
 /* Chayacitr css */
 .gallery-flex-wrapper {
@@ -1336,4 +1414,28 @@ body.dark-mode h2.fw-bold.text-primary {
 
 body.dark-mode p.text-muted {
   color: white !important;
+}
+
+/* Neta Pratipaksh page css here */
+/* Notes Section Text */
+.notes-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111827; /* light mode black */
+}
+
+.notes-text {
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  font-weight: bold;
+  color: #111827; /* light mode black */
+}
+
+@media (prefers-color-scheme: dark) {
+  .notes-heading,
+  .notes-text {
+    color: #ffffff; /* dark mode white */
+  }
 }

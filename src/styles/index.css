@@ -295,6 +295,20 @@ code {
   font-size: 14px;
   color: #4b5563;
 }
+/* netapratipaksh list paragraph  */
+.notes-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 18px;       /* bigger text */
+  line-height: 1.8;
+  color: #111827;
+  text-align: justify;   /* justify text */
+  font-weight: bold;     /* bold text */
+}
+.notes-section p {
+  margin-bottom: 1rem;
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Speaker Section */
 .speakers-container {
@@ -788,3 +802,6 @@ body.dark-mode .dark-light-text {
   border-radius: 4px;
   display: inline-block;
 }
+
+
+

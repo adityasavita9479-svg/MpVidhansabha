@@ -7,7 +7,7 @@ const ShriPurushottamVinayakDixitPage = () => {
       <div style={styles.topProfileCard}>
         <div style={styles.photoFrame}>
           <img
-            src="/leaders/Guv-white.avif"
+            src="/leaders/Guv-white.jpg"
             alt="श्री पुरूषोत्‍तम विनायक दीक्षित"
             style={styles.profileImage}
           />

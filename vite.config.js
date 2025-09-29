@@ -1,6 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { viteStaticCopy } from 'vite-plugin-static-copy'
+
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   plugins: [
@@ -9,10 +11,9 @@ export default defineConfig({
       targets: [
         {
           src: 'web.config', // copy this file to dist root
-          dest: ''
+          dest: ''            // stays at root of dist
         }
       ]
     })
   ],
-  base: './', // ✅ relative paths so assets load in /mpvs/ subfolder
-})
+});
