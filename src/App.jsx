@@ -329,6 +329,7 @@ function App() {
         <Route path="/pithasinadhikarisammmelan" element={<><Pithasinadhikarisammelan/><Footer /></>} />
         <Route path="/sachiwalyasampativivran" element={<><Sachiwalyasampativivran/><Footer /></>} />
         <Route path="/year/2020" element={<><Sampativivransachivalya2020/><Footer /></>} />
+        
 
 
 
