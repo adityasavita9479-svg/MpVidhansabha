@@ -1,0 +1,1994 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/* Governor Profile Css */
+
+.page-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #f0f4f8;
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: #222;
+}
+
+.top-profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  max-width: none;   /* remove restriction */
+}
+
+.profile-image {
+  width: 150px !important;  /* force bigger size */
+  height: auto !important;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.divider {
+  width: 5px;
+  height: 140px;
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.name-frame {
+  background-color: #0056b3;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+}
+
+.top-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.card-landscape,
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  border-bottom: 3px solid rgb(35, 211, 241);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.bold-paragraph {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0056b3;
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: #007bff;
+}
+
+.info-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+
+
+/* Narendra Singh Tomar Profile PAge  */
+.page-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #f0f4f8;
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: #222;
+}
+
+.top-profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.divider {
+  width: 5px;
+  height: 140px;
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.name-frame {
+  background-color: #0056b3;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  min-width: 250px;
+}
+
+.top-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.card-landscape {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+}
+
+.section {
+  margin-bottom: 1.5rem;
+   text-align: justify;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  border-bottom: 3px solid rgb(35, 211, 241);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.bold-paragraph {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0056b3;
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: #007bff;
+}
+
+.info-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+  text-align: justify;
+  margin-left:40px;
+}
+/* Umang singher Profile Css */
+.page-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #f0f4f8;
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: #222;
+}
+
+.top-profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.divider {
+  width: 5px;
+  height: 140px;
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.name-frame {
+  background-color: #0056b3;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  min-width: 250px;
+}
+
+.top-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.card-landscape {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+}
+
+.section {
+  margin-bottom: 1.5rem;
+   text-align: justify;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  border-bottom: 3px solid rgb(35, 211, 241);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.bold-paragraph {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0056b3;
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: #007bff;
+}
+
+.info-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Mohan Yadav CM Profile Css */
+.page-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #f0f4f8;
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: #222;
+}
+
+.top-profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.divider {
+  width: 5px;
+  height: 140px;
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.name-frame {
+  background-color: #0056b3;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  min-width: 250px;
+}
+
+.top-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.card-landscape {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+}
+
+.section {
+  margin-bottom: 1.5rem;
+   text-align: justify;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  border-bottom: 3px solid rgb(35, 211, 241);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.bold-paragraph {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0056b3;
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: #007bff;
+}
+
+.info-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Governer List Page Css  */
+
+.governors-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.governors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* flexible grid */
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px; /* keeps grid neat */
+}
+
+.governor-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.governor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.governor-info {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  flex: 1;
+}
+
+.governor-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+}
+
+.governor-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 8px 0 5px;
+}
+
+.governor-tenure {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Large screens (desktops >1200px) */
+@media (min-width: 1200px) {
+  .governors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Medium screens (tablets & small laptops) */
+@media (max-width: 992px) {
+  .section-heading {
+    font-size: 1.7rem;
+  }
+
+  .governor-image {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Small screens (large phones, portrait tablets) */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .governor-name {
+    font-size: 1.1rem;
+  }
+
+  .governor-tenure {
+    font-size: 0.85rem;
+  }
+
+  .governor-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .governor-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on phones */
+  }
+
+  .governor-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .governor-name {
+    font-size: 1rem;
+  }
+
+  .governor-tenure {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ultra small devices (<360px, very small phones) */
+@media (max-width: 360px) {
+  .governors-grid {
+    grid-template-columns: 1fr; /* stack cards */
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/* Chayacitr css */
+.gallery-flex-wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.year-filter {
+  margin-bottom: 20px;
+}
+
+.year-label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.year-dropdown {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-card-image {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.gallery-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+/* Vidhan Sabha Tour Page Css */
+/* Thumbnail images */
+.category-thumbnail {
+  max-width: 280px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.category-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Modal carousel images */
+.modal-carousel-img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Overlay background for text readability */
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Heading styling */
+h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Gallery */
+.gallery-flex-wrapper {
+  padding: 30px;
+  background-color: #f9f9ff;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-card-image {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-card-title {
+  padding: 12px 16px;
+  font-size: 17px;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+/* Gallery new */
+.gallery-wrapper {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.gallery-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background-color: #f1f1f1;
+  border: 2px solid transparent;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-card-image {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.gallery-card-title {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.year-filter {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #003366; /* Deep blue text */
+}
+
+.year-label {
+  min-width: 100px;
+  color: #003366;
+}
+
+.year-dropdown {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 8px;
+  background-color: #ffffff; /* White background */
+  color: #003366; /* Blue text */
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+.year-dropdown:hover,
+.year-dropdown:focus {
+  border-color: #0056b3; /* Darker blue */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+.gallery-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+  /* background-color: #0d47a1; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+.tour-btn {
+  background: linear-gradient(45deg, #0f52ba, #1c86ee); /* Calm blue default */
+  color: white;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 200px;
+  font-size: 1rem;
+  font-weight: bold; /* <- Bold text */
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(15, 82, 186, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tour-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808); /* Saffron, White, Green */
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  /* border-radius: 200px; */
+  font-weight: bold; /* <- Bold text */
+
+
+}
+
+.tour-btn:hover::before {
+  left: 0;
+  /* border-radius: 200px; */
+  font-weight: bold; /* <- Bold text */
+
+
+}
+
+.tour-btn:hover {
+  transform: scale(1.05);
+  color: black;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  font-weight: bold; /* <- Bold text */
+  /* border-radius: 200px; */
+}
+
+/* Leader Crad Css */
+.leader-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 10px;
+  min-height: 320px;
+}
+
+.leader-photo {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 5px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.leader-photo:hover {
+  transform: scale(1.05);
+}
+/* Card + Footer */
+.card-header {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-body ul li a {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+}
+
+.footer-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-card-header {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.footer-card-body {
+  padding: 12px 15px;
+  font-size: 0.9rem;
+}
+
+.footer-card ul {
+  padding-left: 18px;
+  list-style-type: square;
+}
+
+.footer-card ul li {
+  margin-bottom: 6px;
+}
+
+.footer-card ul li a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.footer-card ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ps Profile css */
+/* Page & Container */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  padding: 40px 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  padding: 32px 24px;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-text {
+  flex: 1;
+  padding: 20px 24px;
+  background-color: #16a34a; /* green background */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.name {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff; /* white text */
+  margin: 0 0 8px 0;
+}
+
+.position {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff; /* white text */
+  margin: 0;
+}
+
+.divider {
+  height: 4px;
+  width: 80px;
+  background-color: transparent; /* subtle white line for contrast */
+  border-radius: 999px;
+  margin: 12px 0;
+}
+
+/* Paragraph & List */
+.paragraph {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.list {
+  padding-left: 24px;
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* Accordion */
+.accordion-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.accordion-header {
+  padding: 16px 20px;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.accordion-title {
+  margin: 0;
+}
+
+.accordion-body {
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* Subtle hover effect for accordion header */
+.accordion-header:hover {
+  background-color: #e5f4ea;
+}
+
+/* Dark Mode Css */
+.dark-mode {
+  background-color: #121212 !important;
+  
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+  border-bottom: 1px solid #444 !important;
+}
+
+.dark-mode .nav-link {
+  color: #ffffff !important;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: white !important;
+  color: #fff !important;
+}
+
+.dark-mode .dropdown-item {
+  
+  
+}
+
+.dark-mode .btn {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+/* Footer text Css  */
+.footer {
+  background-color: #f1f5f9; /* Light mode background */
+  color: #000; /* Light mode text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .footer {
+  background-color: #1e293b; /* Dark mode background */
+  color: #fff; /* Dark mode text */
+}
+/*  */
+.section-heading {
+  text-align: center;
+  font-size: 28px;
+  color: white; /* Light blue for light mode */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* cm Alert msg text */
+/* Light mode */
+.gov-note {
+  color: #555; /* dark text in light mode */
+}
+
+/* Dark mode */
+body.dark-mode .gov-note {
+  color: #ffffff; /* white text in dark mode */
+}
+
+
+/* Gov List Profile .jsx */
+/* DrPattabhiSeetaramayyaPage.styles.js */
+
+
+/* Colors */
+:root {
+  --primary: #008b8b;
+  --secondary: #004d4d;
+  --background: #e0f7f7;
+  --text: #222;
+  --card-background: white;
+  --title: white;
+}
+
+/* Page Wrapper */
+.page-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: var(--background);
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: var(--text);
+}
+
+/* Top Profile Card */
+.top-profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Photo Frame */
+.photo-frame {
+  background-color: var(--card-background);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.divider {
+  width: 5px;
+  height: 20px;
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.name-frame {
+  background-color: #0056b3;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;   /* ← this sets default text color */
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  min-width: 250px;
+}
+
+.top-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Card */
+.card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+}
+
+/* Sections */
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  border-bottom: 3px solid var(--secondary);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Book List */
+.book-list {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Death Notice */
+.death-notice {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary);
+  margin-top: 20px;
+}
+
+/* Info Row */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: var(--secondary);
+}
+
+.info-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Dark mode fix for विधानसभा भ्रमण heading and subtitle */
+body.dark-mode h2.fw-bold.text-primary {
+  color: white !important;
+}
+
+body.dark-mode p.text-muted {
+  color: white !important;
+}
+
+/* Neta Pratipaksh page css here */
+/* Notes Section Text */
+.notes-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111827; /* light mode black */
+}
+
+.notes-text {
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: justify;
+  font-weight: bold;
+  color: #111827; /* light mode black */
+}
+
+@media (prefers-color-scheme: dark) {
+  .notes-heading,
+  .notes-text {
+    color: #ffffff; /* dark mode white */
+  }
+}
+
+
+/* Ministers16thAssemblyPage  Mantrimandal Css */
+/* Full page style */
+.pageWrapper {
+  min-height: 100vh; /* Full viewport height */
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #e0f7fa 0%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* Page Title */
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #00bcd4;
+  border-radius: 2px;
+}
+
+.timelineItem {
+  margin-bottom: 40px;
+  padding-left: 70px;
+  position: relative;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #00bcd4;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.timelineDate {
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 12px;
+}
+
+.timelineButton {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.timelineButton:hover {
+  background-color: #0097a7;
+  transform: translateY(-2px);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .timelineItem {
+    padding-left: 50px;
+  }
+
+  .timelineButton {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+
+  .timelineDate {
+    font-size: 18px;
+  }
+}
+/* Property Declaration of Mantri mandal */
+
+
+.pageWrapper {
+  min-height: 100vh;
+  padding: 50px 20px;
+  font-family: "Noto Sans", sans-serif;
+  background: #f5f7fa;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1b263b;
+  margin-bottom: 40px;
+}
+
+/* Container for year cards */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Year Card */
+.yearCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.yearCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.yearHeader {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b3d91;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0b3d91;
+  padding-bottom: 8px;
+}
+
+/* Individual entry card inside year */
+.entryCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.entryCard:hover {
+  transform: translateY(-2px);
+  background-color: #d0e1fd;
+}
+
+.entryMinister {
+  font-weight: 500;
+  color: #1b263b;
+}
+
+.entryDate {
+  font-weight: 400;
+  color: #34495e;
+}
+
+.noData {
+  font-style: italic;
+  color: #777;
+  margin-top: 10px;
+}
+
+
+/* Mantri Mandal Css for Propetry  */
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  color: #7f8c8d;
+}
+
+/* Card Container */
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual Card */
+.card {
+  background-color: #ffffff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  border-left: 6px solid #3498db;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Minister Name */
+.ministerName {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #2980b9;
+}
+
+/* Position */
+.position {
+  font-weight: 600;
+  margin: 0.3rem 0 0.6rem 0;
+  color: #34495e;
+}
+
+/* Declaration Date */
+.date {
+  margin: 0;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Year Links */
+.yearLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.yearLink {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #dce6f1;
+  transition: all 0.2s;
+}
+
+.yearLink:hover {
+  background-color: #b0c4e3;
+}
+
+/* Note */
+.note {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Mp Session Page Archieve  */
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.9rem;
+
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+ 
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sessionCard {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 5px solid #3498db;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.sessionTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.partsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.partItem {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.partItem.hovered {
+  background-color: #2980b9;
+}
+
+.note {
+  text-align: center;
+  color: #7f8c8d;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Vidhan Sabha Sachiwlaya Css */
+.page-wrapper {
+  padding: 2rem;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+.page-wrapper h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.staff-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.staff-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.staff-card p {
+  margin: 0.25rem 0;
+}
+
+.staff-card p span {
+  font-weight: 600;
+}
+
+.staff-card a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Wrapper & Typography */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f0f4f8, #e2e8f0);
+  color: #1f2937;
+}
+
+/* Main heading */
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section card */
+.section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Section hover animation */
+.section:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Subheadings */
+.subheading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e293b;
+  position: relative;
+}
+
+.subheading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #3b82f6;
+  margin-top: 6px;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.section:hover .subheading::after {
+  width: 100px;
+}
+
+/* Content */
+.content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* Extra heading (italic) */
+.extra-heading {
+  font-style: italic;
+  color: #64748b;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Images */
+.image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+/* Image hover effect */
+.image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+  .subheading {
+    font-size: 1.5rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 20px;
+  }
+}
+
+/* Fade-in animation for sections */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
