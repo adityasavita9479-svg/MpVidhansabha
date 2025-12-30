@@ -57,19 +57,20 @@ import React from "react";
 
 const speakers = [
   { number: 1, name: "पं. कुंजीलाल दुबे", tenure: "01/11/1956 से 17/12/1956 18/12/1956 से 01/07/1957 02/07/1957 से 26/03/1962 27/03/1962 से 07/03/1967", assembly: "प्रथम (1956-1957)", link: "/ad-kunjilaldubey", image: "/leaders/sp-KLDubey.jpg" },
-  { number: 4, name: "श्री काशीप्रसाद पाण्‍डे", tenure: "24/03/1967 से 24/03/1972", link: "/adhyaksh/kashiprasadpandey", image: "/leaders/sp-K_P_Pandey.jpg" },
-  { number: 5, name: "श्री तेजलाल टेंभरे", tenure: "25/03/1972 से 10/08/1972", link: "/adhyaksh/tejlal", image: "/leaders/sp-Tembhre.jpg" },
-  { number: 6, name: "श्री गुलशेर अहमद", tenure: "14/08/1972 से 14/07/1977", link: "/adhyaksh/gulsherahmd", image: "/leaders/sp-Gulsher.jpg" },
-  { number: 7, name: "श्री मुकुन्‍द सखाराम नेवालकर", tenure: "15/07/1977 से 02/07/1980", link: "/adhyaksh/mukundsukhramnewalkar", image: "/leaders/sp-MSNevalkar.jpg" },
-  { number: 8, name: "श्री यज्ञदत्‍त शर्मा", tenure: "03/07/1980 से 19/07/1983", link: "/adhyaksh/yagyadattsharma", image: "/leaders/sp-Yagya_Datta_Sharma.jpg" },
-  { number: 9, name: "श्री रामकिशोर शुक्‍ला", tenure: "05/03/1984 से 13/03/1985", link: "/adhyaksh/ramkishoreshukla", image: "/leaders/sp-Ram_K_Shukla.jpg" },
-  { number: 10, name: "श्री राजेन्‍द्र प्रसाद शुक्‍ल", tenure: "25/03/1985 से 19/03/1990", link: "/adhyaksh/rajendraprasadshukla", image: "/leaders/sp-Rajendra_Prasad_Shukla.jpg" },
-  { number: 11, name: "श्री बृजमोहन मिश्रा", tenure: "20/03/1990 से 22/12/1993", link: "/adhyaksh/brijmohan", image: "/leaders/sp-Brij_Mohan_Mishra.jpg" },
-  { number: 12, name: "श्रीयुत श्रीनिवास तिवारी", tenure: "24/12/1993 से 01/02/1999| 02/02/1999 से 11/12/2003", link: "/adhyaksh/shriniwastiwari", image: "/leaders/sp-sriniwastiwari.jpg" },
-  { number: 13, name: "श्री ईश्वरदास रोहाणी", tenure: "16/12/2003 से 04/01/2009 | 07/01/2009 से 05/11/2013", link: "/adhyaksh/ishwardasrohani", image: "/leaders/sp-Ishwerdas_Rohani (1).jpg" },
-  { number: 15, name: "डॉ. सीतासरन शर्मा", tenure: "09/01/2014 से 01/01/2019", link: "/adhyaksh/sitasaransharma", image: "/leaders/sp-speaker_Vs1.jpg" },
-  { number: 16, name: "श्री नर्मदा प्रसाद प्रजापति (एन. पी.)", tenure: "08/01/2019 से 23/03/2020", link: "/adhyaksh/narmadaprasadprajapati", image: "/leaders/sp-npprajapati.jpg" },
-  { number: 18, name: "श्री गिरीश गौतम", tenure: "22/02/2021 से 14/12/2023", link: "/adhyaksh/girishgoutam", image: "/leaders/sp-girishgautam.jpg" },
+
+  { number: 4, name: "श्री काशीप्रसाद पाण्‍डे", tenure: "24/03/1967 से 24/03/1972", link: "/kashiprasadpandey", image: "/leaders/sp-K_P_Pandey.jpg" },
+  { number: 5, name: "श्री तेजलाल टेंभरे", tenure: "25/03/1972 से 10/08/1972", link: "/tejlal", image: "/leaders/sp-Tembhre.jpg" },
+  { number: 6, name: "श्री गुलशेर अहमद", tenure: "14/08/1972 से 14/07/1977", link: "/gulsherahmd", image: "/leaders/sp-Gulsher.jpg" },
+  { number: 7, name: "श्री मुकुन्‍द सखाराम नेवालकर", tenure: "15/07/1977 से 02/07/1980", link: "/mukundsukhramnewalkar", image: "/leaders/sp-MSNevalkar.jpg" },
+  { number: 8, name: "श्री यज्ञदत्‍त शर्मा", tenure: "03/07/1980 से 19/07/1983", link: "/yagyadattsharma", image: "/leaders/sp-Yagya_Datta_Sharma.jpg" },
+  { number: 9, name: "श्री रामकिशोर शुक्‍ला", tenure: "05/03/1984 से 13/03/1985", link: "/ramkishoreshukla", image: "/leaders/sp-Ram_K_Shukla.jpg" },
+  { number: 10, name: "श्री राजेन्‍द्र प्रसाद शुक्‍ल", tenure: "25/03/1985 से 19/03/1990", link: "/rajendraprasadshukla", image: "/leaders/sp-Rajendra_Prasad_Shukla.jpg" },
+  { number: 11, name: "श्री बृजमोहन मिश्रा", tenure: "20/03/1990 से 22/12/1993", link: "/brijmohan", image: "/leaders/sp-Brij_Mohan_Mishra.jpg" },
+  { number: 12, name: "श्रीयुत श्रीनिवास तिवारी", tenure: "24/12/1993 से 01/02/1999| 02/02/1999 से 11/12/2003", link: "/shriniwastiwari", image: "/leaders/sp-sriniwastiwari.jpg" },
+  { number: 13, name: "श्री ईश्वरदास रोहाणी", tenure: "16/12/2003 से 04/01/2009 | 07/01/2009 से 05/11/2013", link: "/ishwardasrohani", image: "/leaders/sp-Ishwerdas_Rohani (1).jpg" },
+  { number: 15, name: "डॉ. सीतासरन शर्मा", tenure: "09/01/2014 से 01/01/2019", link: "/sitasaransharma", image: "/leaders/sp-speaker_Vs1.jpg" },
+  { number: 16, name: "श्री नर्मदा प्रसाद प्रजापति (एन. पी.)", tenure: "08/01/2019 से 23/03/2020", link: "/narmadaprasadprajapati", image: "/leaders/sp-npprajapati.jpg" },
+  { number: 18, name: "श्री गिरीश गौतम", tenure: "22/02/2021 से 14/12/2023", link: "/girishgoutam", image: "/leaders/sp-girishgautam.jpg" },
   { number: 19, name: "श्री नरेन्द्र सिंह तोमर", tenure: "20/12/2023 से निरंतर", link: "/nst", image: "/leaders/nstomarspkr.jpg" },
 ];
 

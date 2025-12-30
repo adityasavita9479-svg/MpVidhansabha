@@ -1,22 +1,22 @@
 import React from "react";
 
 const ministers2012 = [
-  { id: 1, name: "श्री शिवराज सिंह चौहान, मुख्यमंत्री", date: "29 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/ssc12.pdf" },
-  { id: 2, name: "श्री बाबूलाल गौर, मंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/blg12.pdf" },
-  { id: 3, name: "श्री राघवजी, मंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/raghav12.pdf" },
-  { id: 4, name: "श्री सरताज सिंह, मंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/sartaj12.pdf" },
-  { id: 5, name: "श्री जगदीश देवड़ा, मंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/jd12.pdf" },
-  { id: 6, name: "श्री गौरीशंकर चतुर्भुज बिसेन, मंत्री", date: "28 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/gsb12.pdf" },
-  { id: 7, name: "श्री तुकोजीराव पवार, मंत्री", date: "14 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/trp12.pdf" },
-  { id: 8, name: "श्री करण सिंह वर्मा, मंत्री", date: "29 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/ksv12.pdf" },
-  { id: 9, name: "श्री उमाशंकर गुप्ता, मंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/usg12.pdf" },
-  { id: 10, name: "डॉ. रामकृष्ण कुसमरिया, मंत्री", date: "02 दिसम्बर, 2011", link: "/misc/Mantrimandal/Sampativivran2012/rkk12.pdf" },
-  { id: 11, name: "श्री नारायण सिंह कुशवाह, राज्यमंत्री", date: "29 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/nsk12.pdf" },
-  { id: 12, name: "श्री कन्हैयालाल अग्रवाल, राज्यमंत्री", date: "28 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/kla12.pdf" },
-  { id: 13, name: "श्री हरिशंकर खटीक, राज्यमंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/hsk12.pdf" },
-  { id: 14, name: "श्री ब्रजेन्द्र प्रताप सिंह, राज्यमंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/bps12.pdf" },
-  { id: 15, name: "श्री महेन्द्र हार्डिया, राज्यमंत्री", date: "30 मार्च, 2012", link: "/misc/Mantrimandal/Sampativivran2012/mh12.pdf" },
-  { id: 16, name: "श्री नानाभाऊ मोहोड, राज्यमंत्री", date: "06 दिसम्बर, 2012", link: "/misc/Mantrimandal/Sampativivran2012/nbm12.pdf" },
+  { id: 1, name: "श्री शिवराज सिंह चौहान, मुख्यमंत्री", date: "29 मार्च, 2012", link: "/misc/upload_smptviv/ssc12.pdf" },
+  { id: 2, name: "श्री बाबूलाल गौर, मंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/blg12.pdf" },
+  { id: 3, name: "श्री राघवजी, मंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/raghav12.pdf" },
+  { id: 4, name: "श्री सरताज सिंह, मंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/sartaj12.pdf" },
+  { id: 5, name: "श्री जगदीश देवड़ा, मंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/jd12.pdf" },
+  { id: 6, name: "श्री गौरीशंकर चतुर्भुज बिसेन, मंत्री", date: "28 मार्च, 2012", link: "/misc/upload_smptviv/gsb12.pdf" },
+  { id: 7, name: "श्री तुकोजीराव पवार, मंत्री", date: "14 मार्च, 2012", link: "/misc/upload_smptviv/trp12.pdf" },
+  { id: 8, name: "श्री करण सिंह वर्मा, मंत्री", date: "29 मार्च, 2012", link: "/misc/upload_smptviv/ksv12.pdf" },
+  { id: 9, name: "श्री उमाशंकर गुप्ता, मंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/usg12.pdf" },
+  { id: 10, name: "डॉ. रामकृष्ण कुसमरिया, मंत्री", date: "02 दिसम्बर, 2011", link: "/misc/upload_smptviv/rkk12.pdf" },
+  { id: 11, name: "श्री नारायण सिंह कुशवाह, राज्यमंत्री", date: "29 मार्च, 2012", link: "/misc/upload_smptviv/nsk12.pdf" },
+  { id: 12, name: "श्री कन्हैयालाल अग्रवाल, राज्यमंत्री", date: "28 मार्च, 2012", link: "/misc/upload_smptviv/kla12.pdf" },
+  { id: 13, name: "श्री हरिशंकर खटीक, राज्यमंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/hsk12.pdf" },
+  { id: 14, name: "श्री ब्रजेन्द्र प्रताप सिंह, राज्यमंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/bps12.pdf" },
+  { id: 15, name: "श्री महेन्द्र हार्डिया, राज्यमंत्री", date: "30 मार्च, 2012", link: "/misc/upload_smptviv/mh12.pdf" },
+  { id: 16, name: "श्री नानाभाऊ मोहोड, राज्यमंत्री", date: "06 दिसम्बर, 2012", link: "/misc/upload_smptviv/nbm12.pdf" },
 ];
 
 const Sampativivrandesc2012 = () => {

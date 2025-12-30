@@ -1,39 +1,57 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnnualProperty2021 = () => {
+const Sampativivransachivalya2021 = () => {
   const sections = [
-    "प्रथम श्रेणी अधिकारी",
-    "द्वितीय श्रेणी अधिकारी",
-    "तृतीय श्रेणी कर्मचारी (भाग- 1)",
-    "तृतीय श्रेणी कर्मचारी (भाग- 2)",
-    "तृतीय श्रेणी कर्मचारी (भाग- 3)",
-    "तृतीय श्रेणी कर्मचारी (भाग- 4)",
-    "तृतीय श्रेणी कर्मचारी (भाग- 5)",
+    { title: "प्रथम श्रेणी अधिकारी", pdf: "/misc/sampativivransachivalaya2021(1).pdf" },
+    { title: "द्वितीय श्रेणी अधिकारी", pdf: "/misc/sampativivransachivalaya2021(2).pdf" },
+    { title: "तृतीय श्रेणी कर्मचारी (भाग- 1)", pdf: "/misc/sampativivransachivalaya2021(3).pdf" },
+    { title: "तृतीय श्रेणी कर्मचारी (भाग- 2)", pdf: "/misc/sampativivransachivalaya2021(4).pdf" },
+    { title: "तृतीय श्रेणी कर्मचारी (भाग- 3)", pdf: "/misc/sampativivransachivalaya2021(5).pdf" },
+    { title: "तृतीय श्रेणी कर्मचारी (भाग- 4)", pdf: "/misc/sampativivransachivalaya2021(6).pdf" },
+    { title: "तृतीय श्रेणी कर्मचारी (भाग- 5)", pdf: "/misc/sampativivransachivalaya2021(7).pdf" },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-4">
-      {/* Header */}
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-        वार्षिक संपत्ति विवरण (वर्ष 2021)
-      </h1>
+    <div className="comm-page">
 
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {sections.map((title, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-center items-center text-center cursor-pointer border border-gray-200 hover:shadow-2xl transition"
-          >
-            <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
-          </motion.div>
-        ))}
+      {/* ================= HERO ================= */}
+      <div className="comm-hero">
+        <div className="comm-hero-content">
+          <h1>वार्षिक संपत्ति विवरण</h1>
+          <p>(वर्ष 2021)</p>
+        </div>
       </div>
+
+      {/* ================= SECTION ================= */}
+      <section className="comm-section">
+        {/* <h2>विभाग चुनें</h2> */}
+
+        <div className="comm-grid">
+          {sections.map((section, i) => (
+            <motion.a
+              key={i}
+              href={section.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="comm-card"
+              whileHover={{
+                scale: 1.03,
+                boxShadow: "0 15px 25px rgba(0,0,0,0.15)",
+              }}
+            >
+              <h3>{section.title}</h3>
+            </motion.a>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="comm-footer">
+        © {new Date().getFullYear()} Madhya Pradesh Vidhan Sabha Secretariat
+      </footer>
     </div>
   );
 };
 
-export default AnnualProperty2021;
+export default Sampativivransachivalya2021;

@@ -1,63 +1,62 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 const olderCabinets = [
   {
     date: "17/12/2018 तक",
     assembly: "चतुर्दश विधानसभा",
     details: "",
-    link: "/misc/Mantrimandal/Mantrimandal14/14MINISTER.pdf"
+    link: "/misc/14MINISTER.pdf",
   },
   {
     date: "01/12/2013",
     assembly: "चतुर्दश विधानसभा",
     details: "मध्यप्रदेश राजपत्र (असाधारण) क्रमांक - 570",
-    link: "/cabinet-01122013"
+    link: "/misc/13THVS/13minster.pdf",
   },
-  // {
-  //   date: "16/08/2013",
-  //   assembly: "त्रयोदश विधानसभा",
-  //   details: "मध्यप्रदेश राजपत्र (असाधारण) क्रमांक - 370 एवं 371",
-  //   link: "/cabinet-16082013"
-  // },
-  // {
-  //   date: "17/06/2008",
-  //   assembly: "द्वादश विधानसभा",
-  //   details: "मध्यप्रदेश राजपत्र (असाधारण) क्रमांक - 298",
-  //   link: "/cabinet-17062008"
-  // }
 ];
 
 const OlderCabinetsPage = () => {
-  return (
-    <div className="pageWrapper">
-      <h1 className="pageTitle">मंत्रिमण्डल </h1>
-      <h1 className="pageTitle">(चतुर्दश विधानसभा)</h1>
+  const navigate = useNavigate();
 
-      <ul className="timeline">
-        {olderCabinets.map((item, index) => (
-          <li key={index} className="timelineItem">
-            <div className="timelineDate">￫ दिनांक {item.date}</div>
-            <div className="timelineAssembly">{item.assembly}</div>
-            {item.details && <div className="timelineDetails">{item.details}</div>}
-            {item.link.endsWith(".pdf") ? (
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="timelineButton"
-              >
-                देखें
-              </a>
-            ) : (
-              <Link to={item.link} className="timelineButton">
-                देखें
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
+  return (
+    <div className="comm-page">
+      {/* Hero Section */}
+      <div className="flex items-center justify-between comm-hero">
+        <div className="comm-hero-content">
+          <h1>मंत्रिमण्डल</h1>
+          <p>(चतुर्दश विधानसभा)</p>
+        </div>
+
+        {/* Back Button */}
+        <div
+          className="back-btn"
+          onClick={() => navigate("/mlagroupall")}
+        >
+          <span>पीछे जाये</span> →
+        </div>
+      </div>
+
+      {/* Main Section */}
+      <section className="comm-section">
+        <div className="comm-grid">
+          {olderCabinets.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="comm-card"
+            >
+              <h3 className="comm-card-title">{item.assembly}</h3>
+              <p className="comm-card-date">दिनांक {item.date}</p>
+              {item.details && (
+                <p className="comm-card-details">{item.details}</p>
+              )}
+            </a>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

@@ -1,11 +1,14 @@
+
 // 
 import React from 'react';
 
 const Banner = () => {
   const images = [
-    { src: '/hero/MPVS Image 1.jpg', alt: 'Vidhan Sabha 1' },
-    { src: '/hero/MPVS Image 2.jpg', alt: 'Vidhan Sabha 2' },
-    { src: '/hero/MPVS Image 3.jpg', alt: 'Vidhan Sabha 3' }
+    { src: '/hero/MPVS Image 2.jpg', alt: 'Vidhan Sabha 1' },
+    { src: '/hero/MPVS Image 1.jpg', alt: 'Vidhan Sabha 2' },
+    { src: '/hero/MPVS Image 3.jpg', alt: 'Vidhan Sabha 3' },
+    { src: '/hero/MPVS Image 4.jpg', alt: 'Vidhan Sabha 4' },
+
   ];
 
   return (

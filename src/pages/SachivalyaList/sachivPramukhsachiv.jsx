@@ -1,12 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ For internal routing
 
 const secretariesData = [
   {
     type: "Chief Secretary",
     list: [
       { name: "श्री अरविन्द शर्मा", tenure: "01/10/2025 से निरंतर......" },
-      { name: "श्री अवधेश प्रताप सिंह", tenure: "01/07/2016 से 30/09/2025" },
-      { name: "श्री भगवानदेव ईसरानी", tenure: "29/03/2014 से 30/06/2016" },
+      { 
+        name: "श्री अवधेश प्रताप सिंह", 
+        tenure: "01/07/2016 से 30/09/2025",
+        pdf: "/misc/AP_Singh-Hindi.pdf",
+        
+      },
+      { 
+        name: "श्री भगवानदेव ईसरानी", 
+        tenure: "29/03/2014 से 30/06/2016",
+        path: "/secretary/bdisrani" // ✅ Added internal path
+      },
       { name: "श्री राजकुमार पांडे", tenure: "01/06/2011 से 28/03/2014" },
       { name: "डॉ. ए. के. पयासी", tenure: "14/11/2002 से 31/05/2011" }
     ]
@@ -41,7 +51,8 @@ const SecretariatTable = () => {
       minHeight: "100vh"
     },
     table: {
-      width: "100%",
+      width: "1100px",
+      margin: "0 auto",
       borderCollapse: "collapse",
       backgroundColor: "#ffffff",
       boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
@@ -55,8 +66,26 @@ const SecretariatTable = () => {
       padding: "12px 16px",
       textAlign: "center"
     },
-    td: { padding: "12px 16px", borderBottom: "1px solid #e5e7eb" },
-    sectionTitle: { fontSize: "1.5rem", fontWeight: "700", margin: "30px 0 10px 0" }
+    td: { 
+      padding: "12px 16px", 
+      borderBottom: "1px solid #e5e7eb", 
+      textAlign: "center" 
+    },
+    sectionTitle: { 
+      fontSize: "1.5rem", 
+      fontWeight: "700", 
+      margin: "30px 0 10px 0" 
+    },
+    link: {
+      color: "#2563eb",
+      textDecoration: "none",
+      fontWeight: "500"
+    },
+    icon: {
+      marginLeft: "8px",
+      textDecoration: "none",
+      color: "#1d4ed8"
+    }
   };
 
   return (
@@ -78,7 +107,37 @@ const SecretariatTable = () => {
               {section.list.map((staff, index) => (
                 <tr key={index}>
                   <td style={styles.td}>{index + 1}</td>
-                  <td style={styles.td}>{staff.name}</td>
+                  <td style={styles.td}>
+                    {staff.path ? (
+                      <>
+                        <Link to={staff.path} style={styles.link}>
+                          {staff.name}
+                        </Link>
+                        {staff.pdf && (
+                          <a
+                            href={staff.pdf}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={styles.icon}
+                            title="View PDF"
+                          >
+                            📄
+                          </a>
+                        )}
+                      </>
+                    ) : staff.pdf ? (
+                      <a
+                        href={staff.pdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={styles.link}
+                      >
+                        {staff.name}
+                      </a>
+                    ) : (
+                      staff.name
+                    )}
+                  </td>
                   <td style={styles.td}>{staff.tenure}</td>
                 </tr>
               ))}

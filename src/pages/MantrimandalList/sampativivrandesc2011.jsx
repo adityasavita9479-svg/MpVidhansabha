@@ -1,22 +1,22 @@
 import React from "react";
 
 const ministers2011 = [
-  { id: 1, name: "श्री शिवराज सिंह चौहान, मुख्यमंत्री", date: "25 फरवरी, 2011", link: "/misc/Mantrimandal/Sampativivran2011/ssc11.pdf" },
-  { id: 2, name: "श्री जगदीश देवड़ा, मंत्री", date: "29 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/jd11.pdf" },
-  { id: 3, name: "श्री अजय विश्नोई, मंत्री", date: "01 अप्रैल, 2011", link: "/misc/Mantrimandal/Sampativivran2011/av11.pdf" },
-  { id: 4, name: "श्रीमती अर्चना चिटनीस, मंत्री", date: "01 अप्रैल, 2011", link: "/misc/Mantrimandal/Sampativivran2011/ac11.pdf" },
-  { id: 5, name: "श्री गौरीशंकर चतुर्भुज बिसेन, मंत्री", date: "29 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/gsb11.pdf" },
-  { id: 6, name: "श्री उमाशंकर गुप्ता, मंत्री", date: "16 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/usg11.pdf" },
-  { id: 7, name: "डॉ. रामकृष्ण कुसमरिया, मंत्री", date: "02 दिसम्बर, 2011", link: "/misc/Mantrimandal/Sampativivran2011/rkk11.pdf" },
-  { id: 8, name: "श्री पारस चन्द्र जैन, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/pcj11.pdf" },
-  { id: 9, name: "श्री नारायण सिंह कुशवाह, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/nsk11.pdf" },
-  { id: 10, name: "श्री कन्हैयालाल अग्रवाल, राज्यमंत्री", date: "30 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/kla11.pdf" },
-  { id: 11, name: "श्री हरिशंकर खटीक, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/hsk11.pdf" },
-  { id: 12, name: "श्री देव सिंह सैयाम, राज्यमंत्री", date: "01 अप्रैल, 2011", link: "/misc/Mantrimandal/Sampativivran2011/dss11.pdf" },
-  { id: 13, name: "श्री बृजेन्द्र प्रताप सिंह, राज्यमंत्री", date: "01 अप्रैल, 2011", link: "/misc/Mantrimandal/Sampativivran2011/bps11.pdf" },
-  { id: 14, name: "श्री जय सिंह मरावी, राज्यमंत्री", date: "01 अप्रैल, 2011", link: "/misc/Mantrimandal/Sampativivran2011/jsm11.pdf" },
-  { id: 15, name: "श्री नाना भाऊ मोहोड़, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/nbm11.pdf" },
-  { id: 16, name: "श्री मनोहर ऊंटवाल, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/Mantrimandal/Sampativivran2011/mu11.pdf" },
+  { id: 1, name: "श्री शिवराज सिंह चौहान, मुख्यमंत्री", date: "25 फरवरी, 2011", link: "/misc/upload_smptviv/ssc11.pdf" },
+  { id: 2, name: "श्री जगदीश देवड़ा, मंत्री", date: "29 मार्च, 2011", link: "/misc/upload_smptviv/jd11.pdf" },
+  { id: 3, name: "श्री अजय विश्नोई, मंत्री", date: "01 अप्रैल, 2011", link: "/misc/upload_smptviv/av11.pdf" },
+  { id: 4, name: "श्रीमती अर्चना चिटनीस, मंत्री", date: "01 अप्रैल, 2011", link: "/misc/upload_smptviv/ac11.pdf" },
+  { id: 5, name: "श्री गौरीशंकर चतुर्भुज बिसेन, मंत्री", date: "29 मार्च, 2011", link: "/misc/upload_smptviv/gsb11.pdf" },
+  { id: 6, name: "श्री उमाशंकर गुप्ता, मंत्री", date: "16 मार्च, 2011", link: "/misc/upload_smptviv/usg11.pdf" },
+  { id: 7, name: "डॉ. रामकृष्ण कुसमरिया, मंत्री", date: "02 दिसम्बर, 2011", link: "/misc/upload_smptviv/rkk11.pdf" },
+  { id: 8, name: "श्री पारस चन्द्र जैन, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/upload_smptviv/pcj11.pdf" },
+  { id: 9, name: "श्री नारायण सिंह कुशवाह, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/upload_smptviv/nsk11.pdf" },
+  { id: 10, name: "श्री कन्हैयालाल अग्रवाल, राज्यमंत्री", date: "30 मार्च, 2011", link: "/misc/upload_smptviv/kla11.pdf" },
+  { id: 11, name: "श्री हरिशंकर खटीक, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/upload_smptviv/hsk11.pdf" },
+  { id: 12, name: "श्री देव सिंह सैयाम, राज्यमंत्री", date: "01 अप्रैल, 2011", link: "/misc/upload_smptviv/dss11.pdf" },
+  { id: 13, name: "श्री बृजेन्द्र प्रताप सिंह, राज्यमंत्री", date: "01 अप्रैल, 2011", link: "/misc/upload_smptviv/bps11.pdf" },
+  { id: 14, name: "श्री जय सिंह मरावी, राज्यमंत्री", date: "01 अप्रैल, 2011", link: "/misc/upload_smptviv/jsm11.pdf" },
+  { id: 15, name: "श्री नाना भाऊ मोहोड़, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/upload_smptviv/nbm11.pdf" },
+  { id: 16, name: "श्री मनोहर ऊंटवाल, राज्यमंत्री", date: "31 मार्च, 2011", link: "/misc/upload_smptviv/mu11.pdf" },
 ];
 
 const Sampativivran2011 = () => {

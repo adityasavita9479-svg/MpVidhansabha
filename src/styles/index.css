@@ -219,7 +219,7 @@ code {
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Governor Section (Unified) */
-.governor-container,
+/* .governor-container,
 .governors-section {
   padding: 20px;
   max-width: 1200px;
@@ -294,7 +294,7 @@ code {
 .governor-tenure {
   font-size: 14px;
   color: #4b5563;
-}
+} */
 /* netapratipaksh list paragraph  */
 .notes-section {
   margin-top: 2rem;
@@ -657,32 +657,7 @@ code {
   transition: border-color 0.3s, box-shadow 0.3s;
   outline: none;
 }
-  /* governer card */
-  .governor-card {
-  background-color: #e3f2fd; /* Light mode */
-  border: 1px solid #90caf9;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-/* Dark Mode */
-body.dark-mode .governor-card {
-  background-color: #1e293b;
-  border: 1px solid #334155;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.dark-light-text {
-  color: #000; /* default light mode */
-  transition: color 0.3s;
-}
-
-/* Dark mode text */
-body.dark-mode .dark-light-text {
-  color: #fff;
-}
+  
 
 /* VidhansabhaCategoryCarousel.css */
 .category-thumb {
@@ -717,31 +692,10 @@ body.dark-mode .dark-light-text {
      z-index: 1020;
  }
 
-/* GovernorProfile.css */
 
-/* Default (light mode) */
-.top-title,
-.top-subtitle {
-  color: #000000; /* black text in light mode */
-}
 
-/* Dark mode */
-body.dark-mode .top-title,
-body.dark-mode .top-subtitle {
-  color: #ffffff; /* white text in dark mode */
-}
-
-.dark-light-text {
-  color: #000; /* light mode */
-  transition: color 0.3s ease;
-}
-
-body.dark-mode .dark-light-text {
-  color: #fff; /* dark mode */
-}
 
 /* HistoryPage.css */
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -769,7 +723,13 @@ body.dark-mode .dark-light-text {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  object-fit: cover;
+  object-fit: contain; /* ✅ Changed from 'cover' → 'contain' */
+  background-color: #fff; /* Optional: keeps white background for smaller images */
+}
+
+.image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .extra-heading {
@@ -785,6 +745,8 @@ body.dark-mode .dark-light-text {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 
 .table th,
@@ -794,8 +756,13 @@ body.dark-mode .dark-light-text {
   text-align: center;
 }
 
+.table th {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
 .heading {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   background-color: #0d6efd;
@@ -803,6 +770,7 @@ body.dark-mode .dark-light-text {
   border-radius: 4px;
   display: inline-block;
 }
+
 
 /* Indira Gandi Bhawan  */
 .wrapper {

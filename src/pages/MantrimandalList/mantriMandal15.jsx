@@ -1,36 +1,54 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const previousCabinets = [
-  { date: "11/12/2023 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER.pdf" },
-  { date: "25/08/2023 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER2.pdf" },
-  { date: "01/01/2021 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER3.pdf" },
-  { date: "11/11/2020 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER4.pdf" },
-  { date: "20/10/2020 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER5.pdf" },
-  { date: "01/07/2020 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER6.pdf" },
-  { date: "20/03/2020 तक", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER7.pdf" },
-  { date: "05/01/2019 की स्थिति", link: "/misc/Mantrimandal/Mantrimandal15/15MINISTER8.pdf" },
+  { date: "11/12/2023 तक", link: "/misc/15MINISTER.pdf" },
+  { date: "25/08/2023 तक", link: "/misc/sscminister250823.pdf" },
+  { date: "01/01/2021 तक", link: "/misc/sscminister010121.pdf" },
+  { date: "11/11/2020 तक", link: "/misc/sscminister111120.pdf" },
+  { date: "20/10/2020 तक", link: "/misc/sscminister201020.pdf" },
+  { date: "01/07/2020 तक", link: "/misc/sscminister010720.pdf" },
+  { date: "20/03/2020 तक", link: "/misc/knmantri200320.pdf" },
+  { date: "05/01/2019 की स्थिति", link: "/misc/knmantri050119.pdf" },
 ];
 
 const PreviousCabinetsPage = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="pageWrapper">
-      <h1 className="pageTitle"> मंत्रिमण्डल</h1>
-      <h2 className="pageTitle"> (पंद्रहवीं विधानसभा)</h2>
-      <ul className="timeline">
-        {previousCabinets.map((item, index) => (
-          <li key={index} className="timelineItem">
-            <div className="timelineDate">￫ दिनांक {item.date}</div>
+    <div className="comm-page">
+      {/* Hero Header */}
+      <div className="flex items-center justify-between comm-hero">
+        <div>
+          <h1>मंत्रिमण्डल</h1>
+          <p>(पंचदश विधानसभा)</p>
+        </div>
+
+        {/* Back Button */}
+        <div
+          className="back-btn"
+          onClick={() => navigate("/mlagroupall")}
+        >
+          <span>पीछे जाये</span> →
+        </div>
+      </div>
+
+      {/* Cabinet Timeline */}
+      <div className="comm-section">
+        <div className="comm-grid">
+          {previousCabinets.map((item, index) => (
             <a
+              key={index}
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="timelineButton"
+              className="comm-card"
             >
-              देखें
+              <h3>￫ दिनांक {item.date}</h3>
             </a>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

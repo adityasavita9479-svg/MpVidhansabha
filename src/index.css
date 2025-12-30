@@ -10,525 +10,211 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-/* Governor Profile Css */
 
-.page-wrapper {
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  background-color: #f0f4f8;
-  padding: 1.5rem 1rem;
-  max-width: 1100px;
-  margin: auto;
+/* Navbar.css - styles to mimic the government header + blue nav bar */
+
+.gov-header {
+  font-family: "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+}
+
+/* Thin top strip */
+.top-strip {
+  background: #f6f6f6;
+  border-bottom: 1px solid #e2e2e2;
+  height: 38px;
+  font-size: 13px;
+}
+.top-strip .gov-txt {
+  font-weight: 600;
   color: #222;
 }
-
-.top-profile-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.photo-frame {
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-  max-width: none;   /* remove restriction */
-}
-
-.profile-image {
-  width: 150px !important;  /* force bigger size */
-  height: auto !important;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-}
-
-.divider {
-  width: 5px;
-  height: 140px;
-  margin: 0 20px;
-  background: transparent;
-  border-radius: 2px;
-}
-
-.name-frame {
-  background-color: #0056b3;
-  border-radius: 12px;
-  padding: 2rem 3rem;
-  color: white;
-  flex: 1;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  min-width: 250px;
-}
-
-.top-title {
-  font-size: 2rem;
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.top-subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
-.card-landscape,
-.card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
-  margin-bottom: 2rem;
-}
-
-.section {
-  margin-bottom: 1.5rem;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  color: #0056b3;
-  border-bottom: 3px solid rgb(35, 211, 241);
-  padding-bottom: 6px;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.paragraph {
-  font-size: 1rem;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-.bold-paragraph {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  color: #0056b3;
-  margin-top: 20px;
-}
-
-.info-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
-
-.info-label {
-  font-weight: 700;
-  margin-right: 6px;
-  min-width: 120px;
-  color: #007bff;
-}
-
-.info-value {
-  flex: 1;
+.top-strip .dept-txt {
   color: #333;
-  font-weight: 500;
+  opacity: 0.85;
 }
 
+/* Branding row */
+.brand-row {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+.emblem {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;
+}
+.right-logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
 
-
-/* Narendra Singh Tomar Profile PAge  */
-.page-wrapper {
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  background-color: #f0f4f8;
-  padding: 1.5rem 1rem;
-  max-width: 1100px;
-  margin: auto;
+/* Title block */
+.title-block .title-hi {
+  font-weight: 700;
+  font-size: 20px;
+  color: #111;
+}
+.title-block .title-en {
+  font-weight: 700;
+  font-size: 16px;
   color: #222;
+  opacity: 0.8;
 }
 
-.top-profile-card {
+/* Main blue nav */
+.main-nav {
+  background: linear-gradient(180deg,#0e396d); /* deep govt-blue */
+  padding: 0;
+  --bs-navbar-padding-x: 0;
+  border-bottom: 2px solid #030303; /* thin darker strip */
+}
+
+/* use a scrollable flex row for nav items so they stay in one line on wide screens */
+.nav-scroll {
   display: flex;
+  gap: 14px;
+  flex-wrap: wrap;   /* ADD THIS */
+  padding-left: 6px;
+  padding-right: 6px;
   align-items: center;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.photo-frame {
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+
+/* Ensure home box stays visible and aligned */
+.home-box {
+  flex: 0 0 auto;
 }
 
-.profile-image {
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+/* Make sure toggler sits to the right on small screens */
+.navbar-toggler.ms-auto {
+  margin-left: auto;
 }
 
-.divider {
-  width: 5px;
-  height: 140px;
-  margin: 0 20px;
-  background: transparent;
-  border-radius: 2px;
+/* Slight responsive tweak so home and toggler don't collide */
+@media (max-width: 480px) {
+  .home-btn { width: 40px; height: 40px; }
+  .home-btn img { width: 20px; height: 20px; }
+  .navbar-toggler { padding: 6px 8px; }
 }
 
-.name-frame {
-  background-color: #0056b3;
-  border-radius: 12px;
-  padding: 2rem 3rem;
-  color: white;
-  flex: 1;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  min-width: 250px;
+
+/* nav items */
+.nav-scroll .nav-item {
+  list-style: none;
+}
+.nav-scroll .nav-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;     /* reduced font */
+  padding: 8px 10px;   /* reduced spacing */
 }
 
-.top-title {
-  font-size: 2rem;
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.1;
+.nav-scroll .nav-link:hover,
+.nav-scroll .nav-link:focus {
+  color: #fff;
+  background: rgba(255,255,255,0.06);
+  
 }
 
-.top-subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  font-weight: 500;
+/* dropdown menu style */
+.dropdown-menu {
+  min-width: 200px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.dropdown-item {
+  font-weight: 600;
 }
 
-.card-landscape {
+/* search box & results */
+.search-wrap {
+  width: 220px;
+  min-width: 140px;
+}
+.search-wrap .form-control {
+  font-size: 13px;
+  padding: 6px 8px;
+}
+.search-results {
+  top: 100%;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.btn-tour {
+  background: #2b8bcf;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-tour:hover {
+  background: linear-gradient(
+    90deg,
+    #ff9933 0%,   /* Saffron */
+    #ffffff 50%, /* White */
+    #138808 100% /* Green */
+  );
+  color: #000;
+  border: none;
   background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
-  margin-bottom: 2rem;
 }
 
-.card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+
+/* more button on right */
+.more-btn .btn {
+  background: #08304a;
+  color: #fff;
+  border: 0;
 }
 
-.section {
-  margin-bottom: 1.5rem;
-   text-align: justify;
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .title-block .title-hi { font-size: 16px; }
+  .title-block .title-en { font-size: 13px; }
+  .emblem, .right-logo { height: 48px; }
+  .nav-scroll { gap: 10px; }
+  .nav-scroll .nav-link { font-size: 14px; padding: 10px 10px; }
+  .search-wrap { width: 160px; }
 }
 
-.section-title {
-  font-size: 1.5rem;
-  color: #0056b3;
-  border-bottom: 3px solid rgb(35, 211, 241);
-  padding-bottom: 6px;
-  margin-bottom: 15px;
-  font-weight: 700;
-  text-align: justify;
+/* mobile: make nav items stacked when collapsed */
+@media (max-width: 767.98px) {
+  .brand-row { flex-direction: row; justify-content: space-between; }
+  .search-wrap { width: 140px; min-width: 120px; }
+  .nav-scroll { padding-left: 0; gap: 8px; }
 }
 
-.paragraph {
-  font-size: 1rem;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 1rem;
-  color: #444;
+/* remove default navbar-toggler icon color conflict */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.25);
+}
+.navbar-toggler .navbar-toggler-icon {
+  filter: none;
 }
 
-.bold-paragraph {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  color: #0056b3;
-  margin-top: 20px;
-}
 
-.info-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
+/* small improvements */
+.form-select.form-select-sm { height: calc(1.5em + 0.5rem + 2px); }
 
-.info-label {
-  font-weight: 700;
-  margin-right: 6px;
-  min-width: 120px;
-  color: #007bff;
-}
+/* dark mode fallback */
 
-.info-value {
-  flex: 1;
-  color: #333;
-  font-weight: 500;
-  text-align: justify;
-  margin-left:40px;
-}
-/* Umang singher Profile Css */
-.page-wrapper {
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  background-color: #f0f4f8;
-  padding: 1.5rem 1rem;
-  max-width: 1100px;
-  margin: auto;
-  color: #222;
-}
 
-.top-profile-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
 
-.photo-frame {
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-}
+/* end of file */
 
-.profile-image {
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-}
+/* fix for center line covering other pages:
+   we do NOT use absolute positioned top lines over content.
+   The header uses static heights, so margin-top on main must be set (see top). */
 
-.divider {
-  width: 5px;
-  height: 140px;
-  margin: 0 20px;
-  background: transparent;
-  border-radius: 2px;
-}
-
-.name-frame {
-  background-color: #0056b3;
-  border-radius: 12px;
-  padding: 2rem 3rem;
-  color: white;
-  flex: 1;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  min-width: 250px;
-}
-
-.top-title {
-  font-size: 2rem;
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.top-subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
-.card-landscape {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
-  margin-bottom: 2rem;
-}
-
-.card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
-}
-
-.section {
-  margin-bottom: 1.5rem;
-   text-align: justify;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  color: #0056b3;
-  border-bottom: 3px solid rgb(35, 211, 241);
-  padding-bottom: 6px;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.paragraph {
-  font-size: 1rem;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-.bold-paragraph {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  color: #0056b3;
-  margin-top: 20px;
-}
-
-.info-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
-
-.info-label {
-  font-weight: 700;
-  margin-right: 6px;
-  min-width: 120px;
-  color: #007bff;
-}
-
-.info-value {
-  flex: 1;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Mohan Yadav CM Profile Css */
-.page-wrapper {
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  background-color: #f0f4f8;
-  padding: 1.5rem 1rem;
-  max-width: 1100px;
-  margin: auto;
-  color: #222;
-}
-
-.top-profile-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.photo-frame {
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-shrink: 0;
-}
-
-.profile-image {
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-}
-
-.divider {
-  width: 5px;
-  height: 140px;
-  margin: 0 20px;
-  background: transparent;
-  border-radius: 2px;
-}
-
-.name-frame {
-  background-color: #0056b3;
-  border-radius: 12px;
-  padding: 2rem 3rem;
-  color: white;
-  flex: 1;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  min-width: 250px;
-}
-
-.top-title {
-  font-size: 2rem;
-  margin: 0;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.top-subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
-.card-landscape {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
-  margin-bottom: 2rem;
-}
-
-.card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem 1.8rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
-}
-
-.section {
-  margin-bottom: 1.5rem;
-   text-align: justify;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  color: #0056b3;
-  border-bottom: 3px solid rgb(35, 211, 241);
-  padding-bottom: 6px;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.paragraph {
-  font-size: 1rem;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-.bold-paragraph {
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  color: #0056b3;
-  margin-top: 20px;
-}
-
-.info-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8px;
-}
-
-.info-label {
-  font-weight: 700;
-  margin-right: 6px;
-  min-width: 120px;
-  color: #007bff;
-}
-
-.info-value {
-  flex: 1;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Governer List Page Css  */
+/* Bhutpurv List Page Css  */
 
 .governors-section {
   padding: 20px;
@@ -539,16 +225,16 @@ code {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #348fee;
 }
 
 .governors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* flexible grid */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
   gap: 20px;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1400px; /* keeps grid neat */
+  max-width: 1400px; 
 }
 
 .governor-card {
@@ -736,32 +422,78 @@ code {
 }
 /* Vidhan Sabha Tour Page Css */
 /* Thumbnail images */
-.category-thumbnail {
-  max-width: 280px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+/* ✅ Category Thumbnail Styling */
+.tour-container {
+  max-width: 1400px;
 }
 
+/* Card container */
+.tour-card {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Category thumbnail styling */
+.category-thumbnail {
+  width: 100%;
+  max-width: 280px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+/* Hover effect */
 .category-thumbnail:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* Modal carousel images */
+/* Fix IIS grid gaps */
+.row.g-4 > [class*="col-"] {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-bottom: 25px !important;
+  box-sizing: border-box;
+}
+
+/* Modal carousel image */
 .modal-carousel-img {
+  width: 100%;
   height: 450px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 8px;
 }
 
-/* Overlay background for text readability */
-.card-overlay {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-/* Heading styling */
+/* Heading color based on mode */
 h2 {
   font-weight: bold;
-  color: #333;
+  color: #000;
+  transition: color 0.3s ease;
 }
+
+body.dark h2,
+html.dark h2 {
+  color: #fff !important;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .category-thumbnail {
+    height: 160px;
+  }
+
+  .modal-carousel-img {
+    height: 320px;
+  }
+}
+
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Gallery */
@@ -1071,7 +803,7 @@ h2 {
 }
 
 .footer-card ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-image {
@@ -1227,6 +959,21 @@ h2 {
   background-color: #333 !important;
   color: #fff !important;
 }
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  margin-top: 0;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > .dropdown-item::after {
+
+  float: right;
+  margin-left: 5px;
+}
+
 
 /* Footer text Css  */
 .footer {
@@ -1243,7 +990,7 @@ body.dark-mode .footer {
 .section-heading {
   text-align: center;
   font-size: 28px;
-  color: white; /* Light blue for light mode */
+  
   margin-bottom: 30px;
   font-weight: bold;
 }
@@ -1441,8 +1188,10 @@ body.dark-mode p.text-muted {
 }
 
 
-/* Ministers16thAssemblyPage  Mantrimandal Css */
+/* Ministers16thAssemblyPage  
+Mantrimandal Css */
 /* Full page style */
+
 .pageWrapper {
   min-height: 100vh; /* Full viewport height */
   padding: 50px 20px;
@@ -1803,7 +1552,7 @@ body.dark-mode p.text-muted {
   font-size: 0.95rem;
 }
 
-/* Vidhan Sabha Sachiwlaya Css */
+/* Vidhan Sabha bhawan Sachiwlaya Css */
 .page-wrapper {
   padding: 2rem;
   background-color: #f3f4f6;
@@ -1859,7 +1608,7 @@ body.dark-mode p.text-muted {
 
 .staff-card a {
   color: #2563eb;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Wrapper & Typography */
@@ -1881,7 +1630,7 @@ body.dark-mode p.text-muted {
   margin-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  background: #3b82f6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1991,4 +1740,2201 @@ body.dark-mode p.text-muted {
     transform: translateY(0);
   }
 }
+/* CommitteeMeetings.css */
+
+.table-card-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #e0f7f7;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.table-card-heading {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #004d4d;
+}
+
+.table-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.styled-table th {
+  background-color: #bbdefb;
+  position: sticky;
+  top: 0;
+  text-align: left;
+  padding: 0.6rem;
+  border: 1px solid #90caf9;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.styled-table td {
+  padding: 0.6rem;
+  border: 1px solid #e3f2fd;
+  color: #333;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+@media (max-width: 768px) {
+  .styled-table th,
+  .styled-table td {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+}
+
+/* Community Page CSS */
+
+/* Body */
+/* Page Container */
+/* Base Page */
+/* Root Variables for Light/Dark Mode */
+/* GLOBAL PAGE */
+.comm-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================================
+   GLOBAL HERO SECTION (REDUCED FIXED HEIGHT)
+   ================================ */
+.comm-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+
+  /* 🔥 REDUCED FIXED HEIGHT */
+  height: 150px;
+  min-height: 150px;
+  max-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  text-align: center;
+
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 20px;
+}
+
+.comm-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comm-hero h1,
+.press-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.comm-hero p,
+.press-hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* ================================
+   Committees Section
+   ================================ */
+.comm-section {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.comm-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Grid */
+.comm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 50px;
+  align-items: stretch;
+}
+
+/* Card */
+.comm-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #1e3a8a;
+  display: flex;
+  flex-direction: column;
+}
+
+.comm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.comm-card h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+.comm-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comm-card ul li a {
+  text-decoration: none;
+  color: #005bb5;
+  font-weight: 500;
+}
+
+.comm-card ul li a:hover {
+  color: #ff6600;
+}
+
+/* Assembly Links */
+.comm-assembly-links {
+  margin-top: 9rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.comm-separator {
+  border: none;
+  height: 3px;
+  width: 120px;
+  margin: 0.6rem auto;
+  background: linear-gradient(to right, #005f73, #0a9396, #94d2bd);
+  border-radius: 5px;
+}
+
+.comm-assembly-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+/* Link Hover */
+.comm-link {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #005bb5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comm-link:hover {
+  color: #ff6600;
+}
+
+/* Remove underline */
+.comm-card-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+}
+
+.comm-card-link:hover,
+.comm-card-link:focus,
+.comm-card-link:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+.comm-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  text-align: center;
+  margin-top: 0 !important;
+
+  position: relative;
+}
+
+/* LEFT THEME BUTTON */
+.footer-theme-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #222;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.85rem;
+}
+
+.footer-theme-btn:hover {
+  background: #ffaa00;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  .comm-hero,
+  .press-hero {
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+  }
+
+  .comm-hero h1,
+  .press-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .comm-hero p,
+  .press-hero p {
+    font-size: 0.95rem;
+  }
+
+  .comm-grid {
+    margin: 0 20px;
+  }
+}
+
+
+
+
+/* GovernmentAssurancesPage.css */
+
+.gov-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.gov-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 15px 20px; 
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gov-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gov-hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.gov-hero-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.gov-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  margin-left: 0; /* removed fixed margin */
+}
+
+.gov-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+  margin-left: 0; /* removed fixed margin */
+}
+
+/* Hero Button */
+.gov-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ffcc00;
+  color: #222;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.gov-btn:hover {
+  background: #ffe066;
+}
+
+/* Main Section */
+.gov-section {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.gov-section h1 {
+  font-size: 1.8rem;
+  color: #002f6c;
+  padding-bottom: 6px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  
+}
+
+.gov-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.gov-report-block {
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.gov-report-block h3 {
+  color: #003366;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.gov-report-block ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gov-report-block li {
+  margin: 0;
+}
+
+.gov-link {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #f2f6ff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #ccdfff;
+}
+
+.gov-link:hover {
+  text-decoration: none;
+  color: #ff6600;
+  background-color: #e9f1ff;
+  border-color: #ffcc00;
+}
+
+.gov-separator {
+  border: 0;
+  height: 2px;
+  background: #d9d9d9;
+  margin: 40px auto;
+  width: 70%;
+  border-radius: 2px;
+}
+
+.gov-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  margin-top: 40px;
+}
+
+/* =====================
+   RESPONSIVE UPDATES
+===================== */
+@media screen and (max-width: 1024px) {
+  .gov-hero-row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gov-hero h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .gov-hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .gov-btn {
+    margin-top: 15px;
+  }
+  .gov-report-block {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gov-hero h1 {
+    font-size: 1.5rem;
+  }
+  .gov-hero p {
+    font-size: 0.9rem;
+  }
+  .gov-section h1 {
+    font-size: 1.5rem;
+  }
+  .gov-section h2 {
+    font-size: 1.2rem;
+  }
+  .gov-report-block ul {
+    flex-direction: column;
+  }
+}
+
+/* panchdash community page */
+/* Body */
+/* ================================
+   PAGE WRAPPER
+================================ */
+/* ================================
+   PAGE BASE
+================================ */
+.panch-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.panch-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  height: 150px;
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+
+.panch-hero-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.panch-hero-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.panch-hero-text {
+  width: 100%;
+  text-align: center;
+}
+
+.panch-hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.panch-hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ================================
+   RIGHT BUTTON
+================================ */
+.panch-btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #005bb5;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.panch-btn:hover {
+  background: #ffcc00;
+  color: #002f6c;
+}
+
+/* ================================
+   CONTENT SECTIONS
+================================ */
+.panch-section {
+    padding: 40px 20px;   /* पहले 10px था—बहुत कम */
+  flex: 1;      
+}
+
+.panch-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.panch-section h3 {
+  font-size: 1.2rem;
+  color: #004aad;
+}
+
+/* ================================
+   GRID STYLING
+================================ */
+.panch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 50px;
+}
+
+/* ================================
+   CARDS
+================================ */
+.panch-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  text-decoration: none;
+  color: #1e3a8a;
+}
+
+.panch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.panch-link {
+  background-color: #f2f6ff;
+  border: 1px solid #ccdfff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #004aad;
+  transition: 0.3s;
+}
+
+.panch-link:hover {
+  color: #ff6600;
+  /* border-color: #ffcc00; */
+}
+
+/* ================================
+   FIX — REMOVE GAP ABOVE FOOTER
+================================ */
+.comm-assembly-links {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.comm-assembly-container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Footer sticks right below */
+.panch-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  margin-top: 0 !important;
+}
+
+/* ================================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+  .panch-hero {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .panch-btn {
+    position: static;
+    transform: none;
+    margin-top: 15px;
+  }
+
+  .panch-grid {
+    margin: 0 20px;
+    gap: 20px;
+  }
+}
+
+
+
+
+/* governer assurance page  */
+/* Horizontal report links */
+.gov-report-list.horizontal {
+  display: flex;
+  flex-wrap: wrap; /* wrap on smaller screens */
+  gap: 15px;
+  list-style: none; /* remove bullets */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.gov-report-list.horizontal li {
+  margin: 0;
+}
+
+.gov-report-list.horizontal .gov-link {
+  display: inline-block;
+  background-color: #f2f6ff;
+  color: #004aad;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #ccdfff;
+  transition: all 0.3s ease;
+}
+
+.gov-report-list.horizontal .gov-link:hover {
+  background-color: #e9f1ff;
+  color: #ff6600;
+  border-color: #ffcc00;
+}
+
+/* special privilege page css */
+/* Base Page */
+.sp-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.sp-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sp-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sp-hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sp-hero-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.sp-hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.sp-hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.sp-btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #222;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.sp-btn:hover {
+  background: #ffe066;
+}
+
+/* Section */
+.sp-section {
+  padding: 40px 20px;
+}
+
+.sp-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Card for each committee */
+.sp-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  margin: 30px auto;
+  max-width: 850px;
+}
+
+.sp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+}
+
+.sp-card h3 {
+  font-size: 1.3rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+/* Horizontal link layout */
+.sp-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sp-card li {
+  margin: 0;
+}
+
+.sp-link {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #f2f6ff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #ccdfff;
+}
+
+.sp-link:hover {
+  color: #ff6600;
+  background-color: #e9f1ff;
+  border-color: #ffcc00;
+}
+
+/* Separator */
+.sp-separator {
+  border: 0;
+  height: 2px;
+  background: #d9d9d9;
+  margin: 40px auto;
+  width: 70%;
+  border-radius: 2px;
+}
+
+/* Footer */
+.sp-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  margin-top: 40px;
+}
+
+/* panchdash samiti suchi css */
+.gov-report-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px
+}
+
+.gov-report-block {
+  flex: 1 1 50%;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gov-report-block h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+
+.gov-report-block ol {
+  padding-left: 20px;
+}
+
+.chairperson {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .gov-report-block {
+    flex: 1 1 100%; /* stack on small screens */
+  }
+}
+/* Chaturdash page Css */
+/* Global Page Styles */
+.chatur-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Ensure footer alignment */
+}
+
+/* Hero Section */
+.chatur-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chatur-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* UPDATED → Center text, allow button to go extreme right */
+.chatur-hero-row {
+  display: flex;
+  justify-content: center; /* text stays centered */
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative; /* required for absolute button */
+}
+
+.chatur-hero-text {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.chatur-hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.chatur-hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* UPDATED → Button moves to extreme right of hero section */
+.chatur-btn {
+  display: inline-block;
+  margin-top: 0;
+  background: #fff;
+  color: #005bb5;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+
+  position: absolute;
+  right: 20px; /* extreme right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chatur-btn:hover {
+  /* background: #ffe066; */
+}
+
+/* Committees Section */
+.chatur-section {
+  padding: 10px 20px;
+  flex: 1; /* Makes section expand to push footer down */
+}
+
+.chatur-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.chatur-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+/* Grid for Cards */
+.chatur-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 0 50px;
+  align-items: stretch; /* ensures all cards same height */
+}
+
+/* Card */
+.chatur-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #1e3a8a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 250px; /* ensures all cards have same minimum height */
+}
+
+.chatur-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Lists inside card */
+.chatur-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* makes list grow to fill card if needed */
+  display: flex;
+  flex-direction: column; /* vertical list */
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.chatur-card li {
+  margin: 0;
+}
+
+/* Links inside cards */
+.chatur-link {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #f2f6ff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #ccdfff;
+}
+
+.chatur-link:hover {
+  color: #ff6600;
+  background-color: #e9f1ff;
+  border-color: #ffcc00;
+}
+
+/* Clean text-style links with spacing */
+.chatur-link-text {
+  display: block;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  line-height: 1.7;
+  transition: color 0.3s ease;
+}
+
+.chatur-link-text:hover {
+  color: #ff6600;
+}
+
+/* Card footer */
+.chatur-card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* Footer */
+.chatur-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  margin-top: auto; /* Ensures footer stays at bottom */
+  text-align: center;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 768px) {
+  .chatur-hero-row {
+    flex-direction: column;
+  }
+
+  /* Mobile: button should go below → reset absolute */
+  .chatur-btn {
+    position: static;
+    transform: none;
+    margin-top: 15px;
+  }
+
+  .chatur-grid {
+    margin: 0 20px;
+    gap: 20px;
+  }
+
+  .chatur-card {
+    min-height: 200px;
+  }
+}
+
+/* trayodash page css */
+/* Page Wrapper */
+.tray-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.tray-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tray-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tray-hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Center hero text */
+.tray-hero-text {
+  flex: 1;
+  text-align: center;
+}
+
+.tray-hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.tray-hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Back Button */
+.tray-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #005bb5;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.tray-btn:hover {
+  /* background-color: #ffe066; */
+  cursor: pointer;
+}
+
+/* Committees Section */
+.tray-section {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.tray-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Grid for Cards */
+.tray-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 50px;
+  align-items: stretch;
+}
+
+/* Individual Card */
+.tray-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #1e3a8a;
+  display: flex;
+  flex-direction: column;
+}
+
+.tray-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.tray-card h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+.tray-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tray-card ul li a {
+  text-decoration: none;
+  color: #005bb5;
+  font-weight: 500;
+}
+
+.tray-card ul li a:hover {
+  color: #ff6600;
+}
+
+/* Assembly Links */
+.tray-assembly-links {
+  margin-top: 2rem;
+}
+
+.tray-separator {
+  border: none;
+  height: 3px;
+  width: 80%;
+  margin: 2rem auto;
+  background: linear-gradient(to right, #005f73, #0a9396, #94d2bd);
+  border-radius: 5px;
+}
+
+.tray-assembly-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tray-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #005bb5;
+}
+
+.tray-link:hover {
+  color: #ff6600;
+}
+
+/* Footer */
+.tray-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .tray-hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tray-hero-text {
+    order: 1;
+  }
+
+  .tray-btn {
+    order: 2;
+    margin-top: 15px;
+  }
+
+  .tray-hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .tray-hero-text p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Extra css For History */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f0f4f8, #e2e8f0);
+  color: #1f2937;
+}
+
+/* Main heading */
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #3b82f6;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section card */
+.section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Section hover animation */
+.section:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Subheadings */
+.subheading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e293b;
+  position: relative;
+}
+
+.subheading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #3b82f6;
+  margin-top: 6px;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.section:hover .subheading::after {
+  width: 100px;
+}
+
+/* Content */
+.content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* Extra heading (italic) */
+.extra-heading {
+  font-style: italic;
+  color: #64748b;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Images */
+.image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+/* Image hover effect */
+.image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+  .subheading {
+    font-size: 1.5rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 20px;
+  }
+}
+
+/* Fade-in animation for sections */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Padkram Suchi Page Css */
+/* === Hero Section === */
+.padkram-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.padkram-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 25px 20px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.padkram-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.padkram-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 5px 0;
+}
+
+/* Section */
+.padkram-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.padkram-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #003366;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Grid Layout */
+.padkram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 50px;
+}
+
+/* Cards */
+.padkram-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.padkram-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.padkram-card h3 {
+  font-size: 1.1rem;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.padkram-card a {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: 600;
+}
+
+.padkram-card a:hover {
+  color: #ff6600;
+}
+
+/* Footer */
+.padkram-footer {
+  background-color: #002f6c;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #ffcc00;
+  text-align: center;
+  margin-top: auto;
+}
+
+
+
+/* Hero Section */
+.press-hero {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+  margin-bottom: 20px;
+ 
+
+}
+
+.press-hero h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.press-hero p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Year Buttons */
+.year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.year-btn {
+  background-color: #005bb5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.year-btn:hover {
+  background-color: #003366;
+}
+
+/* Year Section */
+.year-section {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.year-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #dde6f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.year-header h2 {
+  font-size: 1.3rem;
+  color: #003366;
+}
+
+/* Table Container with Left & Right Margin */
+/* Container for table with 50px spacing on left and right */
+.press-table-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow-x: auto; /* optional: horizontal scroll on small screens */
+}
+
+/* Table styling */
+.press-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table cells padding */
+.press-table th,
+.press-table td {
+  padding: 10px 12px; /* original */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+/* Add extra padding inside cells to respect 50px spacing */
+.press-table th:first-child,
+.press-table td:first-child {
+  padding-left: 50px; /* left spacing for first column */
+}
+
+.press-table th:last-child,
+.press-table td:last-child {
+  padding-right: 50px; /* right spacing for last column */
+}
+
+.press-table th {
+  background-color: #005bb5;
+  color: white;
+}
+
+.press-table tr:nth-child(even) {
+  background-color: #f1f7ff;
+}
+
+.press-table a {
+  color: #005bb5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.press-table a:hover {
+  color: #ff6600;
+}
+.subject-link {
+  color: #005bb5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.subject-link:hover {
+  color: #ff6600;
+  
+}
+/* press release chitra page css */
+/* Press Release Page */
+.press-page {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+/* Main Heading */
+.press-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #003366;
+  font-weight: 700;
+}
+
+/* Year Cards */
+.year-card {
+  background: linear-gradient(135deg, #002f6c, #005bb5);
+  color: white;
+  padding: 30px 0;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.year-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.year-card h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Press Cards Grid */
+.press-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.press-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.press-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.press-card .card-body {
+  padding: 15px;
+}
+
+.press-card h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.press-card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Detailed Press Page */
+.press-detail h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.press-detail p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Press Images */
+.image-overlay {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay img:hover {
+  transform: scale(1.05);
+}
+
+/* Back Buttons */
+.press-detail .btn {
+  background-color: #fff;
+  color: #005bb5;
+  border: 2px solid #005bb5;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.press-detail .btn:hover {
+  background-color: #005bb5;
+  color: #fff;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .press-card img {
+    height: 180px;
+  }
+  .image-overlay img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .year-card {
+    padding: 20px 0;
+  }
+  .press-card img {
+    height: 150px;
+  }
+  .image-overlay img {
+    height: 180px;
+  }
+}
+
+/* Vartman Profile Page css */
+/* Page Wrapper */
+.profile-page {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #f0f4f8; /* matched old background */
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: #222;
+}
+
+/* Header Section */
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.profile-photo-container {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  max-width: none;
+}
+
+.profile-photo {
+  width: 150px; /* increased to match old style */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.profile-divider {
+  width: 5px;
+  height: 140px;
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.profile-name-box {
+  background-color: #0056b3;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  min-width: 250px;
+}
+
+.profile-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+}
+
+.profile-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Info Section */
+.info-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.info-section {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.detail-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.detail-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: #007bff;
+}
+
+.detail-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Bio Section */
+.bio-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.bio-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  border-bottom: 3px solid rgb(35, 211, 241);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.bio-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.bio-highlight {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0056b3;
+  margin-top: 20px;
+}
+
+/* bhutpurv perticular profile css */
+/* 🔙 Back Button */
+.bhut-btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #222;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.bhut-btn:hover {
+  background: #ffe066;
+  transform: translateY(-2px);
+}
+
+/* Page Layout */
+.page-wrapper {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #e0f7f7;
+  padding: 1.5rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+  color: #222;
+}
+
+/* Profile Section */
+.top-profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.name-frame {
+  background-color: #008b8b;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  color: white;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+}
+
+.name-frame h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.name-frame h3 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.name-frame .tenure {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Info Card */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #008b8b;
+  border-bottom: 3px solid #004d4d;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.death-notice {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #004d4d;
+  margin-top: 20px;
+}
+
+/* Info Row */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-weight: 700;
+  margin-right: 6px;
+  min-width: 120px;
+  color: #004d4d;
+}
+
+.info-value {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .name-frame {
+    padding: 1.2rem;
+  }
+
+  .name-frame h1 {
+    font-size: 1.6rem;
+  }
+
+  .name-frame h3 {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 140px;
+  }
+}
+/* button back new */
+/* Back Button Styling */
+/* Make hero section flex with space between */
+.comm-hero {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  width: 100%;
+}
+
+/* Back Button Styling */
+.back-btn {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 999px;
+  padding: 5px 18px;
+  display: flex;
+  align-items: center;
+  gap: px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-left: auto;   /* THIS PUSHES IT TO EXTREME RIGHT */
+}
+
+.back-btn span {
+  color: #004AAD !important;  /* Blue text */
+}
+
+.back-btn:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+
+
+
+
+
+
 

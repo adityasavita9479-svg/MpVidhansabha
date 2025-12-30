@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Footer = () => {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark");
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
   useEffect(() => {
     if (darkMode) {
@@ -16,14 +18,22 @@ const Footer = () => {
   }, [darkMode]);
 
   return (
-    <div className={`footer ${darkMode ? 'footer-dark' : 'footer-light'}`}>
-      © 2025 मध्य प्रदेश विधान सभा | All Rights Reserved
-      <div className="footer-toggle">
-        <button onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-        </button>
-      </div>
-    </div>
+    <footer
+      className={`comm-footer ${darkMode ? "footer-dark" : "footer-light"}`}
+    >
+      {/* 🌗 Button placed at EXTREME LEFT */}
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+        className="footer-theme-btn"
+      >
+        {darkMode ? "☀️" : "🌙"}
+      </button>
+
+      {/* Center footer text */}
+      <p style={{ margin: 0 }}>
+        © {new Date().getFullYear()} मध्यप्रदेश विधानसभा सचिवालय
+      </p>
+    </footer>
   );
 };
 

@@ -2,37 +2,50 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const cabinetStatuses = [
-  { date: "02/12/2024 से...", link: "/misc/Mantrimandal/MantrimandalMain/16MINISTER.pdf" },
-  { date: "02/12/2024 तक की स्थिति", link: "/misc/Mantrimandal/MantrimandalMain/16MINISTER_021224.pdf" },
-  { date: "07/07/2024 तक की स्थिति", link: "/misc/Mantrimandal/MantrimandalMain/16MINISTER_070724.pdf" },
+  { date: "02/12/2024 से...", link: "/misc/16MINISTER.pdf" },
+  { date: "02/12/2024 तक की स्थिति", link: "/misc/16MINISTER_021224.pdf" },
+  { date: "07/07/2024 तक की स्थिति", link: "/misc/16MINISTER_070724.pdf" },
 ];
 
 const Ministers16thAssemblyPage = () => {
   return (
-    <div className="pageWrapper">
-      <h1 className="pageTitle">मंत्रिमण्डल (षोडश विधानसभा)</h1>
+    <div className="comm-page">
+      {/* Hero Section */}
+      <div className="comm-hero">
+        <h1>मंत्रिमण्डल</h1>
+        <p>(षोडश विधानसभा)</p>
+      </div>
 
-      <ul className="timeline">
-        {cabinetStatuses.map((status, index) => (
-          <li key={index} className="timelineItem">
-            <div className="timelineDate">{status.date}</div>
-            {status.link.endsWith(".pdf") ? (
+      {/* Main Section */}
+      <section className="comm-section">
+        <h2>दिनांक अनुसार स्थिति</h2>
+        <div className="comm-grid">
+          {cabinetStatuses.map((status, index) => {
+            const isPdf = status.link.endsWith(".pdf");
+            const content = (
+              <div className="comm-card">
+                <h3>￫ {status.date}</h3>
+              </div>
+            );
+
+            return isPdf ? (
               <a
+                key={index}
                 href={status.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="timelineButton"
+                className="comm-card-link"
               >
-                देखें
+                {content}
               </a>
             ) : (
-              <Link to={status.link} className="timelineButton">
-                देखें
+              <Link key={index} to={status.link} className="comm-card-link">
+                {content}
               </Link>
-            )}
-          </li>
-        ))}
-      </ul>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 };
